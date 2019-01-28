@@ -51,9 +51,6 @@ app.use((req, res, next) => {
 app.use('/feed', feedRoutes);
 app.use('/auth', authRoutes);
 
-app.use('/feed', feedRoutes);
-app.use('/auth', authRoutes);
-
 app.use((error, req, res, next) => {
   console.log(error);
   const status = error.statusCode || 500;
@@ -64,7 +61,7 @@ app.use((error, req, res, next) => {
 
 mongoose
 	.connect(
-		'mongodb+srv://user1:2vE6ll3YrUEJm9y3@cluster0-kaj5u.azure.mongodb.net/messages?retryWrites=true', 
+		'mongodb+srv://user1:2vE6ll3YrUEJm9y3@cluster0-kaj5u.azure.mongodb.net/messages', 
 		{ useNewUrlParser: true }
 	)
   .then(result => {
