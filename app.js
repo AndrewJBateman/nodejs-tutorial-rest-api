@@ -1,3 +1,4 @@
+require('dotenv').config();
 const path = require('path');
 
 const express = require('express');
@@ -41,13 +42,20 @@ app.use(
 );
 app.use('/images', express.static(path.join(__dirname, 'images')));
 
+// Add headers to the response - allow access from any client using the wildcard * (not just from codepen)
 app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader(
+		'Access-Control-Allow-Origin', '*'
+	);
   res.setHeader(
     'Access-Control-Allow-Methods',
     'OPTIONS, GET, POST, PUT, PATCH, DELETE'
   );
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  res.setHeader(
+		'Access-Control-Allow-Headers', 
+		'Content-Type, Authorization'
+	);
+
   if (req.method === 'OPTIONS') {
     return res.sendStatus(200);
   }
@@ -71,8 +79,8 @@ app.put('/post-image', (req, res, next) => {
     .json({ message: 'File stored.', filePath: req.file.path });
 });
 
-app.use(
-  '/graphql',
+// use graphql
+app.use('/graphql',
   graphqlHttp({
     schema: graphqlSchema,
     rootValue: graphqlResolver,
@@ -99,9 +107,10 @@ app.use((error, req, res, next) => {
 
 mongoose
   .connect(
-    'mongodb+srv://user1:2vE6ll3YrUEJm9y3@cluster0-kaj5u.azure.mongodb.net/messages?retryWrites=true', { useNewUrlParser: true }
+    'mongodb+srv://process.env.USER_NAME:process.env.USER_PASSWORD@cluster0-kaj5u.azure.mongodb.net/messages?retryWrites=true', { useNewUrlParser: true }
   )
   .then(result => {
     app.listen(8080);
+		console.log('listening on port 8080');
   })
   .catch(err => console.log(err));

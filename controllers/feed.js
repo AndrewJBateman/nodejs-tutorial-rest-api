@@ -18,6 +18,7 @@ exports.getPosts = async (req, res, next) => {
       .skip((currentPage - 1) * perPage)
       .limit(perPage);
 
+		//return a response with json data
     res.status(200).json({
       message: 'Fetched posts successfully.',
       posts: posts,
