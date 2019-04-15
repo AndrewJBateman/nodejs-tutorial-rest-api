@@ -23,19 +23,19 @@ A Postman API and a [Codepen REST API test app](https://codepen.io/AndrewJBatema
 
 ## Screenshots
 
-![Example screenshot](./imgages/postman.png).
+![Example screenshot](./images/postman.png).
 
 ## Technologies
 
-* [Multer v1.4.1](https://www.npmjs.com/package/multer) is the middleware used for uploading files.
+* [multer v1.4.1](https://www.npmjs.com/package/multer) is the middleware used for uploading files.
 
 * [socket.io v2.2.0](https://socket.io/) is added for real-time event-based communications.
 
-* [GraphQL v14.1.1](https://www.graphql.org/) is added, a query language for APIs.
+* [graphql v14.1.1](https://www.graphql.org/) is added, a query language for APIs.
 
 * [bcrypt v2.4.3](https://www.npmjs.com/package/bcrypt) library used to hash passwords.
 
-* [Mongoose v5.4.6](https://mongoosejs.com/) object modelling for node.js.
+* [mongoose v5.4.6](https://mongoosejs.com/) object modelling for node.js.
 
 * [Postman](https://www.getpostman.com/) API dev platform used.
 
@@ -50,6 +50,7 @@ Run `npm start` for a dev server. Navigate to `http://localhost:8080/`. The app 
 * getPosts method from controllers\feed.js
 
 ```javascript
+
 exports.getPosts = async (req, res, next) => {
   const currentPage = req.query.page || 1;
   const perPage = 2;
@@ -85,7 +86,7 @@ exports.getPosts = async (req, res, next) => {
 
 * Status: incomplete, nothing viewed on localhost://8080
 
-* To-Do: requires more commenting and screen shots.
+* To-Do: update code. Also requires more commenting and screen shots.
 
 ## Inspiration
 
