@@ -1,51 +1,49 @@
-# Nodejs Tutorial Rest API
+# :zap: Nodejs Tutorial Rest API
 
-This is an app to practise working with Representational State Transfer (REST) APIs that just transfer data instead of user interfaces.
+* This is an app to practise working with Representational State Transfer (REST) APIs that just transfer data instead of user interfaces.
 
 *** Note: to open web links in a new window use: _ctrl+click on link_**
 
-## Table of contents
+## :page_facing_up: Table of contents
 
-* [General info](#general-info)
-* [Screenshots](#screenshots)
-* [Technologies](#technologies)
-* [Setup](#setup)
-* [Features](#features)
-* [Status](#status)
-* [Inspiration](#inspiration)
-* [Contact](#contact)
+* [:zap: Nodejs Tutorial Rest API](#zap-nodejs-tutorial-rest-api)
+  * [:page_facing_up: Table of contents](#page_facing_up-table-of-contents)
+  * [:books: General info](#books-general-info)
+  * [:camera: Screenshots](#camera-screenshots)
+  * [:signal_strength: Technologies](#signal_strength-technologies)
+  * [:floppy_disk: Setup](#floppy_disk-setup)
+  * [:computer: Code Examples](#computer-code-examples)
+  * [:cool: Features](#cool-features)
+  * [:clipboard: Status & To-Do List](#clipboard-status--to-do-list)
+  * [:clap: Inspiration](#clap-inspiration)
+  * [:envelope: Contact](#envelope-contact)
 
-## General info
+## :books: General info
 
 * This app creates simple get and post routes/controllers to send and receive data, as well as header and status information.
+* A Postman API and a [Codepen REST API test app](https://codepen.io/AndrewJBateman/pen/dwbVaX?editors=0010) are used to send/receive data.
 
-A Postman API and a [Codepen REST API test app](https://codepen.io/AndrewJBateman/pen/dwbVaX?editors=0010) are used to send/receive data.
-
-## Screenshots
+## :camera: Screenshots
 
 ![Example screenshot](./images/postman.png).
 
-## Technologies
+## :signal_strength: Technologies
 
-* [multer v1.4.1](https://www.npmjs.com/package/multer) is the middleware used for uploading files.
-
-* [socket.io v2.2.0](https://socket.io/) is added for real-time event-based communications.
-
-* [graphql v14.1.1](https://www.graphql.org/) is added, a query language for APIs.
-
-* [bcrypt v2.4.3](https://www.npmjs.com/package/bcrypt) library used to hash passwords.
-
-* [mongoose v5.4.6](https://mongoosejs.com/) object modelling for node.js.
-
+* [multer v1](https://www.npmjs.com/package/multer) is the middleware used for uploading files.
+* [socket.io v2](https://socket.io/) is added for real-time event-based communications.
+* [graphql v14](https://www.graphql.org/) is added, a query language for APIs.
+* [bcrypt v2](https://www.npmjs.com/package/bcrypt) library used to hash passwords.
+* [mongoose v5](https://mongoosejs.com/) object modelling for node.js.
 * [Postman](https://www.getpostman.com/) API dev platform used.
-
 * [Codepen 'REST API test'](https://codepen.io/AndrewJBateman/pen/dwbVaX?editors=1010) used to test the app.
 
-## Setup
+## :floppy_disk: Setup
 
-Run `npm start` for a dev server. Navigate to `http://localhost:8080/`. The app will automatically reload if you change any of the source files.
+* Create MongoDB Atlas Cloud database (or local installed MongoDB database) and add user access/database credentials to a new `.env` file - referred to in `app.js`.
+* Add IP address to MongoDB Atlas Network Access whitelist. Or simply whitelist all (IP address 0.0.0.0/0).
+* Run `npm start` for a dev server. Navigate to `http://localhost:8080/`. The app will automatically reload if you change any of the source files.
 
-## Code Examples
+## :computer: Code Examples
 
 * getPosts method from controllers\feed.js
 
@@ -78,20 +76,19 @@ exports.getPosts = async (req, res, next) => {
 
 ```
 
-## Features
+## :cool: Features
 
 * MongoDB cluster set up with usernme and password.
 
-## Status & To-Do List
+## :clipboard: Status & To-Do List
 
-* Status: incomplete, nothing viewed on localhost://8080
+* Status: Part complete & working, Connects to database but nothing viewed on `localhost://8080`. `localhost://8080/graphql` works
+* To-Do: Complete course & update code. Also requires more commenting and screen shots.
 
-* To-Do: update code. Also requires more commenting and screen shots.
-
-## Inspiration
+## :clap: Inspiration
 
 * [NodeJS - The Complete Guide (incl. MVC, REST APIs, GraphQL sections 24 and other sections)](https://www.udemy.com/nodejs-the-complete-guide/).
 
-## Contact
+## :envelope: Contact
 
-Created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!
+* Repo created by [ABateman](https://www.andrewbateman.org) - you are welcome to [send me a message](https://andrewbateman.org/contact)
