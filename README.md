@@ -2,7 +2,12 @@
 
 * This is an app to practise working with Representational State Transfer (REST) APIs that just transfer data instead of user interfaces.
 
-*** Note: to open web links in a new window use: _ctrl+click on link_**
+* **Note:** to open web links in a new window use: _ctrl+click on link_
+
+![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/nodejs-tutorial-rest-api?style=plastic)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/AndrewJBateman/nodejs-tutorial-rest-api?style=plastic)
+![GitHub Repo stars](https://img.shields.io/github/stars/AndrewJBateman/nodejs-tutorial-rest-api?style=plastic)
+![GitHub last commit](https://img.shields.io/github/last-commit/AndrewJBateman/anodejs-tutorial-rest-api?style=plastic)
 
 ## :page_facing_up: Table of contents
 
@@ -16,6 +21,7 @@
   * [:cool: Features](#cool-features)
   * [:clipboard: Status & To-Do List](#clipboard-status--to-do-list)
   * [:clap: Inspiration](#clap-inspiration)
+  * [:file_folder: License](#file_folder-license)
   * [:envelope: Contact](#envelope-contact)
 
 ## :books: General info
@@ -89,6 +95,10 @@ exports.getPosts = async (req, res, next) => {
 
 * [NodeJS - The Complete Guide (incl. MVC, REST APIs, GraphQL sections 24 and other sections)](https://www.udemy.com/nodejs-the-complete-guide/).
 
+## :file_folder: License
+
+* This project is licensed under the terms of the MIT license.
+
 ## :envelope: Contact
 
-* Repo created by [ABateman](https://www.andrewbateman.org) - you are welcome to [send me a message](https://andrewbateman.org/contact)
+* Repo created by [ABateman](https://github.com/AndrewJBateman), email: gomezbateman@yahoo.com
