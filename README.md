@@ -7,7 +7,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/nodejs-tutorial-rest-api?style=plastic)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/AndrewJBateman/nodejs-tutorial-rest-api?style=plastic)
 ![GitHub Repo stars](https://img.shields.io/github/stars/AndrewJBateman/nodejs-tutorial-rest-api?style=plastic)
-![GitHub last commit](https://img.shields.io/github/last-commit/AndrewJBateman/anodejs-tutorial-rest-api?style=plastic)
+![GitHub last commit](https://img.shields.io/github/last-commit/AndrewJBateman/nodejs-tutorial-rest-api?style=plastic)
 
 ## :page_facing_up: Table of contents
 
@@ -31,7 +31,7 @@
 
 ## :camera: Screenshots
 
-![Example screenshot](./images/postman.png).
+![Example screenshot](./images/postman.png)
 
 ## :signal_strength: Technologies
 
@@ -40,12 +40,12 @@
 * [graphql v14](https://www.graphql.org/) is added, a query language for APIs.
 * [bcrypt v2](https://www.npmjs.com/package/bcrypt) library used to hash passwords.
 * [mongoose v5](https://mongoosejs.com/) object modelling for node.js.
-* [Postman](https://www.getpostman.com/) API dev platform used.
+* [VS Extension Thunder client](https://www.thunderclient.com/) REST Client for Testing APIs
 * [Codepen 'REST API test'](https://codepen.io/AndrewJBateman/pen/dwbVaX?editors=1010) used to test the app.
 
 ## :floppy_disk: Setup
 
-* Create MongoDB Atlas Cloud database (or local installed MongoDB database) and add user access/database credentials to a new `.env` file - referred to in `app.js`.
+* Create MongoDB Atlas Cloud database (or local installed MongoDB database) and add user access/database credentials to a new `.env` file - see `.env.example` - referred to in `app.js`.
 * Add IP address to MongoDB Atlas Network Access whitelist. Or simply whitelist all (IP address 0.0.0.0/0).
 * Run `npm start` for a dev server. Navigate to `http://localhost:8080/`. The app will automatically reload if you change any of the source files.
 
@@ -84,12 +84,12 @@ exports.getPosts = async (req, res, next) => {
 
 ## :cool: Features
 
-* MongoDB cluster set up with usernme and password.
+* None
 
 ## :clipboard: Status & To-Do List
 
-* Status: Part complete & working, Connects to database but nothing viewed on `localhost://8080`. `localhost://8080/graphql` works
-* To-Do: Complete course & update code. Also requires more commenting and screen shots.
+* Status: Part complete & working, Connects to database but nothing viewed on `localhost:8080`. `localhost:8080/graphql` works
+* To-Do: Complete code or replace. Also requires more commenting and screen shots.
 
 ## :clap: Inspiration
 
@@ -97,7 +97,7 @@ exports.getPosts = async (req, res, next) => {
 
 ## :file_folder: License
 
-* This project is licensed under the terms of the MIT license.
+* N/A
 
 ## :envelope: Contact
 
